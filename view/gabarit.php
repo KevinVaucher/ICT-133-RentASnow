@@ -49,12 +49,10 @@
                         <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
                             NAVIGATION <span class="icon-chevron-down icon-white"></span>
                         </button>
-                        <div class="nav-collapse collapse">
-                            <ul class="nav nav-pills ddmenu">
+                        <div class="nav nav-pills ddmenu">
                                 <!-- On commence par afficher les boutons qui s'afficheront, peu importe les événements-->
-                                <li><a href="index.php?action=home">Home</a></li>
-                                <li><a href="index.php?action=displaySnows">Snows</a></li>
-                            </ul>
+                                <a href="index.php?action=home">Home</a>
+                                <a href="index.php?action=displaySnows">Snows</a>
                         </div>
                     </div>
                 </div>
