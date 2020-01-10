@@ -1,4 +1,11 @@
-﻿<!DOCTYPE HTML>
+﻿<!--
+Auteur : Kevin Vaucher
+Date : 10.01.2020
+Description : Projet Rent A Snow ICT-133
+Version : 1.0
+-->
+
+<!DOCTYPE HTML>
 <html>
 <head>
     <meta charset="utf-8">
@@ -10,7 +17,8 @@
     <link href="node_modules/bootstrap/dist/css/bootstrap-reboot.css" rel="stylesheet">
 
     <!-- Icons -->
-    <link href="assets/icons/general/stylesheets/general_foundicons.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="assets/icons/general/stylesheets/general_foundicons.css" media="screen" rel="stylesheet"
+          type="text/css"/>
     <link href="assets/icons/social/stylesheets/social_foundicons.css" media="screen" rel="stylesheet" type="text/css"/>
 
     <link rel="stylesheet" href="assets/fontawesome/css/font-awesome.min.css">
@@ -35,7 +43,8 @@
 
 <div id="divBoxed" class="container">
 
-    <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+    <div class="transparent-bg"
+         style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
 
     <div class="divPanel notop nobottom">
         <div class="row-fluid">
@@ -46,13 +55,22 @@
                 </div>
                 <div id="divMenuRight" class="pull-right">
                     <div class="navbar">
-                        <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                        <button type="button" class="btn btn-navbar-highlight btn-large btn-primary"
+                                data-toggle="collapse" data-target=".nav-collapse">
                             NAVIGATION <span class="icon-chevron-down icon-white"></span>
                         </button>
                         <div class="nav nav-pills ddmenu">
-                                <!-- On commence par afficher les boutons qui s'afficheront, peu importe les événements-->
-                                <a href="index.php?action=home">Home</a>
-                                <a href="index.php?action=displaySnows">Snows</a>
+                            <!-- On commence par afficher les boutons qui s'afficheront, peu importe les événements-->
+                            <ul class="nav nav-pills">
+                                <li><a href="index.php?action=home">Home </a><li>
+                                <li><a href="index.php?action=displaySnows">Snows</a></li>
+                                <?php if(isset($_SESSION['username'])){ ?>
+                                    <li><a href="index.php?action?=disconnect">Déconnexion</a></li>
+                                <?php } else { ?>
+                                    <li><a href="index.php?action=connect">Connexion</a></li>
+                                <?php } ?>
+                                <li><a href="index.php?action=displaySnows">S'enregistrer</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -78,7 +96,8 @@
                 <div class="row">
                     <div class="col-4" id="footerArea1">
                         <h3>Notre magasin</h3>
-                        <p>Nous sommes une équipe de jeunes snowboardeurs qui souhaitons faire découvrir cette discipline à tous les publics.</p>
+                        <p>Nous sommes une équipe de jeunes snowboardeurs qui souhaitons faire découvrir cette
+                            discipline à tous les publics.</p>
                         <p>
                             <a href="#" title="Terms of Use">Terms of Use</a><br/>
                             <a href="#" title="Privacy Policy">Privacy Policy</a><br/>
@@ -89,8 +108,10 @@
 
                     <div class="col-4" id="footerArea3">
                         <h3>Horaires de location</h3>
-                        <p>Les locations peuvent s'effectuer tous les jours de la semaine en haute saison de 07h à 19h et en basse saison, les jours ouvrables de 8h à 18h.<br>
-                            Vous pouvez aussi passer par le site. Pour le retrait et le dépot, vous devrez passer au guichet automatique à l'arrière du magasin</p>
+                        <p>Les locations peuvent s'effectuer tous les jours de la semaine en haute saison de 07h à 19h
+                            et en basse saison, les jours ouvrables de 8h à 18h.<br>
+                            Vous pouvez aussi passer par le site. Pour le retrait et le dépot, vous devrez passer au
+                            guichet automatique à l'arrière du magasin</p>
                     </div>
 
                     <div class="col-4" id="footerArea4">
@@ -111,7 +132,7 @@
                             </li>
                             <li>
                                 <i class="general foundicon-home icon" style="margin-bottom:50px"></i>
-                                <span class="field">Addresse :</span>
+                                <span class="field">Adresse :</span>
                                 <br/>
                                 12 Rue de la Glisse<br/>
                                 2704 Sautons, Valais<br/>
