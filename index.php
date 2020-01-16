@@ -18,6 +18,12 @@ switch ($action) {
     case "displaySnows" :
         snows();
         break;
+    case "connect" :
+        connect();
+        break;
+    case "register" :
+        register();
+        break;
     default :
         require_once "view/home.php";
         break;
