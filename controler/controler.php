@@ -33,6 +33,7 @@ function connect()
 // Permet d'afficher la page d'enregistrement d'un compte et charger le fichier Json
 function users()
 {
+    require_once 'view/connect.php';
     $users = getUsers();
     $username = $_POST['email'];
     $password = $_POST['password'];
@@ -40,7 +41,6 @@ function users()
         if (($username == $user['username']) && $password == $user['password']) {
             $_SESSION['email'] = $username;
             $_SESSION['password'] = $password;
-            require_once 'view/connect.php';
         }
 
     }
