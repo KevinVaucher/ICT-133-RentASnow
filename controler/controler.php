@@ -17,9 +17,10 @@ function home()
     require_once 'view/home.php';
 }
 
-// Permet d'afficher la page avec la liste des snowboards
+// Permet d'afficher la page avec la liste des snowboards et charger le fichier Json
 function snows()
 {
+    $snows = getSnows();
     require_once 'view/snows.php';
 }
 
@@ -29,9 +30,19 @@ function connect()
     require_once 'view/connect.php';
 }
 
-// Permet d'afficher la page d'enregistrement d'un compte
-function register()
+// Permet d'afficher la page d'enregistrement d'un compte et charger le fichier Json
+function users()
 {
-    require_once 'view/register.php';
+    $users = getUsers();
+    $username = $_POST['email'];
+    $password = $_POST['password'];
+    foreach ($users as $user) {
+        if (($username == $user['username']) && $password == $user['password']) {
+            $_SESSION['email'] = $username;
+            $_SESSION['password'] = $password;
+            require_once 'view/connect.php';
+        }
+
+    }
 }
-?>
+    ?>

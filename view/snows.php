@@ -14,14 +14,10 @@ $title = 'RentASnow - Snows';
 <div class="span12">
     <h1>Les snows</h1>
     <?php foreach ($snows as $snow) { ?>
-        <div class="row mt-4">
-            <?= date('d.M.Y', strtotime($snow['model'])) ?>
-            <h4><?= $snow['mark'] ?></h4>
-        </div>
-        <img src="images/snows/"<?= $snow['bigimage'] ?>>
-        <h2><?= $snow['smallimage'] ?></h2>
-        <h2><?= $snow['returndate'] ?></h2>
-        <h2><?= $snow['disponibility'] ?></h2>
+        <hr>
+        <img src="view/images/snows/<?= $snow['smallimage'] ?>">
+            <h4>Marque : <?= $snow['mark'] ?></h4>
+            <h4>Modèle : <?= $snow['model']?></h4>
     <?php } ?>
 </div>
 

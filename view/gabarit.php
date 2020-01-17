@@ -70,7 +70,6 @@ Version : 1.0
                                 <?php } else { ?>
                                     <li><a href="index.php?action=connect">Connexion</a></li>
                                 <?php } ?>
-                                <li><a href="index.php?action=register">S'enregistrer</a></li>
                             </ul>
                         </div>
                     </div>
@@ -127,7 +126,7 @@ Version : 1.0
                         </li>
                         <li>
                             <i class="general foundicon-mail icon"></i>
-                            <span class="field">Email :</span>
+                            <span class="field">E-Fmail :</span>
                             <br/>
                             <a href="mailto:info@rentasnow.com" title="Email">info@rentasnow.com</a>
                         </li>

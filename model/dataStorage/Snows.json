@@ -2,80 +2,80 @@
   {
     "model": "B101",
     "mark": "Burton",
-    "bigimage": "view/images/B101.jpg",
-    "smallimage": "view/images/B101_small.jpg",
+    "bigimage": "B101.jpg",
+    "smallimage": "B101_small.jpg",
     "returndate": "",
     "disponibility": true
   },
   {
     "model": "B126",
     "mark": "Free Thinker",
-    "bigimage": "view/images/B126.jpg",
-    "smallimage": "view/images/B126_small.jpg",
+    "bigimage": "B126.jpg",
+    "smallimage": "B126_small.jpg",
     "returndate": "2020-01-09",
     "disponibility": false
   },
   {
     "model": "B327",
     "mark": "Burton",
-    "bigimage": "view/images/B327.jpg",
-    "smallimage": "view/images/B327_small.jpg",
+    "bigimage": "B327.jpg",
+    "smallimage": "B327_small.jpg",
     "returndate": "2020-02-02",
     "disponibility": false
   },
   {
     "model": "K067",
     "mark": "Prior",
-    "bigimage": "view/images/K067.jpg",
-    "smallimage": "view/images/K067_small.jpg",
+    "bigimage": "K067.jpg",
+    "smallimage": "K067_small.jpg",
     "returndate": "2020-01-15",
     "disponibility": false
   },
   {
     "model": "K266",
     "mark": "KR",
-    "bigimage": "view/images/K266.jpg",
-    "smallimage": "view/images/K266_small.jpg",
+    "bigimage": "K266.jpg",
+    "smallimage": "K266_small.jpg",
     "returndate": "",
     "disponibility": true
   },
   {
     "model": "K409",
     "mark": "KR",
-    "bigimage": "view/images/K409.jpg",
-    "smallimage": "view/images/K409_small.jpg",
+    "bigimage": "K409.jpg",
+    "smallimage": "K409_small.jpg",
     "returndate": "",
     "disponibility": true
   },
   {
     "model": "N100",
     "mark": "NSnow",
-    "bigimage": "view/images/N100.jpg",
-    "smallimage": "view/images/N100_small.jpg",
+    "bigimage": "N100.jpg",
+    "smallimage": "N100_small.jpg",
     "returndate": "2020-03-19",
     "disponibility": false
   },
   {
     "model": "N754",
     "mark": "NSnow",
-    "bigimage": "view/images/N754.jpg",
-    "smallimage": "view/images/N754_small.jpg",
+    "bigimage": "N754.jpg",
+    "smallimage": "N754_small.jpg",
     "returndate": "2020-02-12",
     "disponibility": false
   },
   {
     "model": "P067",
     "mark": "Prior",
-    "bigimage": "view/images/P067.jpg",
-    "smallimage": "view/images/P067_small.jpg",
+    "bigimage": "P067.jpg",
+    "smallimage": "P067_small.jpg",
     "returndate": "2020-04-06",
     "disponibility": false
   },
   {
     "model": "P165",
     "mark": "Prior",
-    "bigimage": "view/images/P165.jpg",
-    "smallimage": "view/images/P165_small.jpg",
+    "bigimage": "P165.jpg",
+    "smallimage": "P165_small.jpg",
     "returndate": "",
     "disponibility": true
   }
