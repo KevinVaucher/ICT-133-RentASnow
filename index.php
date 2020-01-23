@@ -34,10 +34,8 @@ switch ($action) {
     case "disconnect" :
         disconnect();
         break;
-    case "wip" :
-        wip();
     default :
-        require_once "view/home.php";
+        require_once "view/index.php";
         break;
 }
 ?>

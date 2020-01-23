@@ -16,13 +16,12 @@ $title = 'RentASnow - Snows';
     <h1>Les snows</h1>
     <?php foreach ($snows as $snow) { ?>
         <hr>
-        <img src="view/images/snows/<?= $snow['smallimage'] ?>">
-            <h4>Marque : <?= $snow['mark'] ?></h4>
-            <h4>Modèle : <?= $snow['model']?></h4>
+        <img src="view/images/snows/<?= $snow['smallimage']?>">
+        <h4>Marque : <?= $snow['mark'] ?></h4>
+        <h4>Modèle : <?= $snow['model'] ?></h4>
         <br>
-            <a href="index.php?action=snowsDetails" class="btn btn-outline-dark">Plus de détails</a>
+        <a href="index.php?action=snowsDetails&id=<?= $snow['id']?>">Plus de détails</a>
     <?php } ?>
-</div>
 
 <?php
 $content = ob_get_clean();
