@@ -50,8 +50,8 @@ Version : 1.0
         <div class="row-fluid">
             <div class="span12">
                 <div id="divLogo" class="pull-left">
-                    <a href="index.php" id="divSiteTitle">Rent A Snow</a><br/>
-                    <a href="index.php" id="divTagLine">La glisse à moindre coût</a>
+                    <a href="index.php?action=home" id="divSiteTitle">Rent A Snow</a><br/>
+                    <a href="index.php?action=home" id="divTagLine">La glisse à moindre coût</a>
                 </div>
                 <div id="divMenuRight" class="pull-right">
                     <div class="navbar">
@@ -66,7 +66,7 @@ Version : 1.0
                                 <li>
                                 <li><a href="index.php?action=displaySnows">Snows</a></li>
                                 <?php if (isset($_SESSION['username'])) { ?>
-                                    <li><a href="index.php?action?=disconnect">Déconnexion</a></li>
+                                    <li><a href="index.php?action=disconnect">Déconnexion</a></li>
                                 <?php } else { ?>
                                     <li><a href="index.php?action=connect">Connexion</a></li>
                                 <?php } ?>
@@ -150,7 +150,7 @@ Version : 1.0
             <div class="row text-center">
                 <div class="social_bookmarks">
                     <a href="#"><i class="social foundicon-facebook"></i> Facebook</a>
-                    <a href=""><i class="social foundicon-twitter"></i> Twitter</a>
+                    <a href="#"><i class="social foundicon-twitter"></i> Twitter</a>
                     <a href="#"><i class="social foundicon-pinterest"></i> Pinterest</a>
                     <a href="#"><i class="social foundicon-rss"></i> Rss</a>
                 </div>

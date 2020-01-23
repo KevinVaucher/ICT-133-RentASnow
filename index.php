@@ -10,20 +10,32 @@ $action = $_GET['action']; // $_GET pour créer la variable action pour le switc
 
 require "controler/controler.php"; // On appelle le controller pour décider de quelle page afficher en fonction du action?=
 
+session_start();
+
 // Switch pour
 switch ($action) {
     case "home" :
         home();
         break;
     case "displaySnows" :
-        snows();
+        displaySnows();
         break;
     case "connect" :
         connect();
         break;
-    case "register" :
-        register();
+    case "tryLogin" :
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        tryLogin($username, $password);
         break;
+    case "snowsDetails" :
+        snowsDetails();
+        break;
+    case "disconnect" :
+        disconnect();
+        break;
+    case "wip" :
+        wip();
     default :
         require_once "view/home.php";
         break;

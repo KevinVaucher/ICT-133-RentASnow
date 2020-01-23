@@ -1,6 +1,6 @@
 <!--
 Auteur : Kevin Vaucher
-Date : 10.01.2020
+Date : 23.01.2020
 Description : Projet Rent A Snow ICT-133
 Version : 1.0
 -->
@@ -10,6 +10,7 @@ ob_start();
 $title = 'RentASnow - Snows';
 ?>
 
+
 <!--Liste des snows-->
 <div class="span12">
     <h1>Les snows</h1>
@@ -18,6 +19,8 @@ $title = 'RentASnow - Snows';
         <img src="view/images/snows/<?= $snow['smallimage'] ?>">
             <h4>Marque : <?= $snow['mark'] ?></h4>
             <h4>Modèle : <?= $snow['model']?></h4>
+        <br>
+            <a href="index.php?action=snowsDetails" class="btn btn-outline-dark">Plus de détails</a>
     <?php } ?>
 </div>
 

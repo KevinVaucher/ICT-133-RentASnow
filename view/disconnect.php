@@ -7,11 +7,12 @@ Version : 1.0
 
 <?php
 ob_start();
-$title = "RentASnow - Connecté";
+$title = "RentASnow - Déconnecté";
+unset($_SESSION['username']);
 ?>
 
-<h1>Vous êtes connecté</h1>
-<a href="index.php">Retour à l'accueil</a>
+<h1>Vous vous êtes déconnecté</h1>
+<a href="index.php?action=home">Retour à l'accueil</a>
 
 <?php
 $content = ob_get_clean();

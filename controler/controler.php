@@ -18,7 +18,7 @@ function home()
 }
 
 // Permet d'afficher la page avec la liste des snowboards et charger le fichier Json
-function snows()
+function displaySnows()
 {
     $snows = getSnows();
     require_once 'view/snows.php';
@@ -30,19 +30,34 @@ function connect()
     require_once 'view/connect.php';
 }
 
-// Permet d'afficher la page d'enregistrement d'un compte et charger le fichier Json
-function users()
+function snowsDetails()
 {
-    require_once 'view/connect.php';
+    require_once 'view/snowsDetails.php';
+}
+
+// Fait la vérification pour vérifier si un compte existe avec le pseudo et le mot de passe entré par l'utilisateur
+
+function tryLogin($username, $password)
+{
     $users = getUsers();
-    $username = $_POST['email'];
-    $password = $_POST['password'];
     foreach ($users as $user) {
         if (($username == $user['username']) && $password == $user['password']) {
-            $_SESSION['email'] = $username;
+            $_SESSION['username'] = $username;
             $_SESSION['password'] = $password;
+            require_once 'view/youareconnected.php';
+            return;
         }
-
     }
+    require_once 'view/failedconnect.php';
 }
-    ?>
+
+function disconnect(){
+    unset($_SESSION['username']);
+    unset($_SESSION['password']);
+    require_once 'view/disconnect.php';
+}
+
+function wip(){
+    require_once 'view/pageWip.php';
+}
+?>
