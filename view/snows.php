@@ -17,10 +17,10 @@ $title = 'RentASnow - Snows';
     <?php foreach ($snows as $snow) { ?>
         <hr>
         <img src="view/images/snows/<?= $snow['smallimage'] ?>">
-            <h4>Marque : <?= $snow['mark'] ?></h4>
-            <h4>Modèle : <?= $snow['model']?></h4>
+        <h4>Marque : <?= $snow['mark'] ?></h4>
+        <h4>Modèle : <?= $snow['model'] ?></h4>
         <br>
-            <a href="index.php?action=snowsDetails" class="btn btn-outline-dark">Plus de détails</a>
+        <a href="index.php?action=snowsDetails&id=<?= $snow['id'] ?>" class="btn btn-outline-dark">Plus de détails</a>
     <?php } ?>
 </div>
 

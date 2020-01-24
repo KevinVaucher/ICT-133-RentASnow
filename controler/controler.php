@@ -32,6 +32,7 @@ function connect()
 
 function snowsDetails()
 {
+    $snows = getSnows();
     require_once 'view/snowsDetails.php';
 }
 

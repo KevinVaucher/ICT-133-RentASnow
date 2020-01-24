@@ -5,7 +5,8 @@
     "bigimage": "B101.jpg",
     "smallimage": "B101_small.jpg",
     "returndate": "",
-    "disponibility": true
+    "disponibility": true,
+    "id" : 1
   },
   {
     "model": "B126",
@@ -13,7 +14,8 @@
     "bigimage": "B126.jpg",
     "smallimage": "B126_small.jpg",
     "returndate": "2020-01-09",
-    "disponibility": false
+    "disponibility": false,
+    "id" : 2
   },
   {
     "model": "B327",
@@ -21,7 +23,8 @@
     "bigimage": "B327.jpg",
     "smallimage": "B327_small.jpg",
     "returndate": "2020-02-02",
-    "disponibility": false
+    "disponibility": false,
+    "id" : 3
   },
   {
     "model": "K067",
@@ -29,7 +32,8 @@
     "bigimage": "K067.jpg",
     "smallimage": "K067_small.jpg",
     "returndate": "2020-01-15",
-    "disponibility": false
+    "disponibility": false,
+    "id" : 4
   },
   {
     "model": "K266",
@@ -37,7 +41,8 @@
     "bigimage": "K266.jpg",
     "smallimage": "K266_small.jpg",
     "returndate": "",
-    "disponibility": true
+    "disponibility": true,
+    "id" : 5
   },
   {
     "model": "K409",
@@ -45,7 +50,8 @@
     "bigimage": "K409.jpg",
     "smallimage": "K409_small.jpg",
     "returndate": "",
-    "disponibility": true
+    "disponibility": true,
+    "id" : 6
   },
   {
     "model": "N100",
@@ -53,7 +59,8 @@
     "bigimage": "N100.jpg",
     "smallimage": "N100_small.jpg",
     "returndate": "2020-03-19",
-    "disponibility": false
+    "disponibility": false,
+    "id" : 7
   },
   {
     "model": "N754",
@@ -61,7 +68,8 @@
     "bigimage": "N754.jpg",
     "smallimage": "N754_small.jpg",
     "returndate": "2020-02-12",
-    "disponibility": false
+    "disponibility": false,
+    "id" : 8
   },
   {
     "model": "P067",
@@ -69,7 +77,8 @@
     "bigimage": "P067.jpg",
     "smallimage": "P067_small.jpg",
     "returndate": "2020-04-06",
-    "disponibility": false
+    "disponibility": false,
+    "id" : 9
   },
   {
     "model": "P165",
@@ -77,6 +86,7 @@
     "bigimage": "P165.jpg",
     "smallimage": "P165_small.jpg",
     "returndate": "",
-    "disponibility": true
+    "disponibility": true,
+    "id" : 10
   }
 ]
