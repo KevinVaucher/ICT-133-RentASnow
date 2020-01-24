@@ -52,13 +52,67 @@ function tryLogin($username, $password)
     require_once 'view/failedconnect.php';
 }
 
-function disconnect(){
+function disconnect()
+{
     unset($_SESSION['username']);
     unset($_SESSION['password']);
     require_once 'view/disconnect.php';
 }
 
-function wip(){
-    require_once 'view/pageWip.php';
+function register()
+{
+    require_once 'view/register.php';
 }
+
+function tryRegister()
+{
+    $users = getUsers();
+    foreach ($users as $user) {
+        if ($username != $user['username']) {
+            $_SESSION['username'] = $username;
+            $_SESSION['password'] = $password;
+            $users[] = ["username" => $_POST["username"], "password" => $_POST["password"], "date-inscription" => $_POST["registerdate"], "employe" => $_POST["chkEmploy"]];
+            createUsers($users);
+            require_once 'view/youareregistered.php';
+            return;
+        } else {
+            require_once 'view/failedregister.php';
+        }
+    }
+}
+
+function personalPage()
+{
+    require_once 'view/personalPage.php';
+}
+
+function adminPanel()
+{
+    $users = getUsers();
+    require_once 'view/adminPanel.php';
+}
+
+function delUsers()
+{
+    $idUsers = $_GET['id'];
+    if($idUsers != 0) {
+        $users = getUsers();
+        unset($users[$idUsers]);
+        createUsers($users);
+        require_once 'view/adminPanel.php';
+    }
+    else{
+        require_once 'view/deladminPanel.php';
+    }
+}
+
+// function employVerify()
+// {
+//     if (  == true) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
 ?>

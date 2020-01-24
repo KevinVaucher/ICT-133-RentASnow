@@ -1,26 +1,43 @@
 [
   {
-    "username": "kevin",
-    "password": "kevinmdp",
-    "birthdate": "2000-12-18",
-    "wantnews": true,
-    "date-inscription": "2020-01-02",
-    "employe": false
+    "username": "Admin",
+    "password": "admin",
+    "date-inscription": "0001-01-01",
+    "employe": "on",
+    "id": "0"
   },
   {
-    "username": "samuel",
-    "password": "samuelmdp",
-    "birthdate": "2004-06-05",
-    "wantnews": false,
+    "username": "iii",
+    "password": "md\u00e9\u00e9p",
     "date-inscription": "2020-01-02",
-    "employe": true
+    "employe": false,
+    "id": "1"
   },
   {
-    "username": "david",
-    "password": "davidmdp",
-    "birthdate": "2002-11-15",
-    "wantnews": true,
+    "username": "iii",
+    "password": "md\u00e9\u00e9p",
     "date-inscription": "2020-01-02",
-    "employe": false
+    "employe": false,
+    "id": "2"
+  },
+  {
+    "username": "iii",
+    "password": "md\u00e9\u00e9p",
+    "date-inscription": "2020-01-02",
+    "employe": false,
+    "id": "3"
+  },
+  {
+    "username": "Samuel",
+    "password": "mdp",
+    "date-inscription": "2020-01-02",
+    "employe": true,
+    "id": "4"
+  },
+  {
+    "username": "Benoit",
+    "password": "1234",
+    "date-inscription": "2020-01-24",
+    "employe": null
   }
 ]

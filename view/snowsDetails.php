@@ -20,6 +20,8 @@ $title = "RentASnow - Snows";
             <h2>Diponibilité : <?php $dispo=$snow['disponibility']; if($dispo==true){echo"Disponible";}else{echo"Indisponible";}?></h2>
             <br>
             <h2>Date de remise en stock : <?php $instock=$snow['returndate']; if($instock!=""){echo"<br>Le produit sera de nouveau disponible le ".$snow['returndate'];}else{echo"<br>Date de réaprovisionnement inconnue";}?></h2>
+            <br>
+            <a href="index.php">Retour à l'accueil</a>
         </div>
     <?php } ?>
 <?php } ?>

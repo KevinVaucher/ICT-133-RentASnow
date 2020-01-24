@@ -67,9 +67,14 @@ Version : 1.0
                                 <li><a href="index.php?action=displaySnows">Snows</a></li>
                                 <?php if (isset($_SESSION['username'])) { ?>
                                     <li><a href="index.php?action=disconnect">Déconnexion</a></li>
+                                    <li><a href="index.php?action=personalPage">Profil : <?= $_SESSION['username'] ?></a></li>
                                 <?php } else { ?>
                                     <li><a href="index.php?action=connect">Connexion</a></li>
-                                <?php } ?>
+                                    <li><a href="index.php?action=register">Inscription</a></li>
+                                <?php }
+                                if ($_SESSION['username'] == "Admin"){?>
+                                <li><a href="index.php?action=adminPanel">Admin Panel</a></li>
+                                <?php }?>
                             </ul>
                         </div>
                     </div>

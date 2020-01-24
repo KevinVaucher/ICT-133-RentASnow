@@ -22,4 +22,8 @@ function getUsers()
     return json_decode(file_get_contents("model/dataStorage/users.json"), true);
 }
 
+function createUsers($users){
+    return file_put_contents('model/dataStorage/users.json', json_encode($users));
+}
+
 ?>

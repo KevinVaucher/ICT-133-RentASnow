@@ -1116,7 +1116,7 @@ header {
 
 /*Placer le bouton Connexion sur la page de connexion*/
 
-#submitconnection{
+.submitBtns{
     position: absolute;
     bottom:430px;
     right: 525px;
