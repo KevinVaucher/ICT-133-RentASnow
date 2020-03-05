@@ -21,8 +21,12 @@ $title = 'RentASnow - Snows';
         <h4>Modèle : <?= $snow['model'] ?></h4>
         <br>
         <a href="index.php?action=snowsDetails&id=<?= $snow['id'] ?>" class="btn btn-outline-dark">Plus de détails</a>
+        <img src="view/images/snows/<?= $snow['smallimage']?>">
+        <h4>Marque : <?= $snow['mark'] ?></h4>
+        <h4>Modèle : <?= $snow['model'] ?></h4>
+        <br>
+        <a href="index.php?action=snowsDetails&id=<?= $snow['id']?>">Plus de détails</a>
     <?php } ?>
-</div>
 
 <?php
 $content = ob_get_clean();

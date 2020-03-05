@@ -50,7 +50,7 @@ switch ($action) {
         delUsers();
         break;
     default :
-        require_once "view/home.php";
+        require_once "view/index.php";
         break;
 }
 // $tab = json_decode(file_get_contents('Snows.json'), true);
