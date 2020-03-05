@@ -10,7 +10,6 @@ ob_start();
 $title = 'RentASnow - Snows';
 ?>
 
-
 <!--Liste des snows-->
 <div class="span12">
     <h1>Les snows</h1>
@@ -21,14 +20,13 @@ $title = 'RentASnow - Snows';
         <h4>Modèle : <?= $snow['model'] ?></h4>
         <br>
         <a href="index.php?action=snowsDetails&id=<?= $snow['id'] ?>" class="btn btn-outline-dark">Plus de détails</a>
-        <img src="view/images/snows/<?= $snow['smallimage']?>">
+        <img src="view/images/snows/<?= $snow['smallimage'] ?>">
         <h4>Marque : <?= $snow['mark'] ?></h4>
         <h4>Modèle : <?= $snow['model'] ?></h4>
         <br>
-        <a href="index.php?action=snowsDetails&id=<?= $snow['id']?>">Plus de détails</a>
+        <a href="index.php?action=snowsDetails&id=<?= $snow['id'] ?>">Plus de détails</a>
     <?php } ?>
-
-<?php
-$content = ob_get_clean();
-require_once 'gabarit.php';
-?>
+    <?php
+    $content = ob_get_clean();
+    require_once 'gabarit.php';
+    ?>
