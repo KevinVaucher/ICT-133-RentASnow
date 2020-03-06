@@ -1,43 +1,15 @@
-[
-  {
+{
+  "0": {
     "username": "Admin",
     "password": "admin",
     "date-inscription": "0001-01-01",
     "employe": "on",
     "id": "0"
   },
-  {
-    "username": "iii",
-    "password": "md\u00e9\u00e9p",
-    "date-inscription": "2020-01-02",
-    "employe": false,
-    "id": "1"
-  },
-  {
-    "username": "iii",
-    "password": "md\u00e9\u00e9p",
-    "date-inscription": "2020-01-02",
-    "employe": false,
-    "id": "2"
-  },
-  {
-    "username": "iii",
-    "password": "md\u00e9\u00e9p",
-    "date-inscription": "2020-01-02",
-    "employe": false,
-    "id": "3"
-  },
-  {
-    "username": "Samuel",
-    "password": "mdp",
-    "date-inscription": "2020-01-02",
-    "employe": true,
-    "id": "4"
-  },
-  {
+  "5": {
     "username": "Benoit",
     "password": "1234",
     "date-inscription": "2020-01-24",
     "employe": null
   }
-]
+}
