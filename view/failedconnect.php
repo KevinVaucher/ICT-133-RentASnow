@@ -1,9 +1,10 @@
 <!--
 Auteur : Kevin Vaucher
-Date : 23.01.2020
-Description : Projet Rent A Snow ICT-133
+Date : 27.03.2020
+Description : Projet Rent A Snow ICT-151
 Version : 1.0
 -->
+
 
 <?php
 ob_start();
