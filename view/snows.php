@@ -8,13 +8,13 @@ Version : 1.0
 
 <?php
 ob_start();
-$title = 'RentASnow - Snows';
+$title = 'RentASnow - Snows'; // Titre de la page
 ?>
 
 <!--Liste des snows-->
 <div class="span12">
     <h1>Les snows</h1>
-    <?php foreach ($snows as $snow) { ?>
+    <?php foreach ($snows as $snow) { ?> <!--Foreach afin d'afficher chaque snow avec sa marque, son modèle, un bouton "plus de détails"-->
         <hr>
         <img src="view/images/snows/<?= $snow['smallimage'] ?>">
         <h4>Marque : <?= $snow['mark'] ?></h4>

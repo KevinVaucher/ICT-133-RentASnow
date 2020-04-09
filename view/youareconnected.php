@@ -8,7 +8,7 @@ Version : 1.0
 
 <?php
 ob_start();
-$title = "RentASnow - Connecté";
+$title = "RentASnow - Connecté"; // Titre de la page
 ?>
 
 <h1>Vous êtes connecté</h1>

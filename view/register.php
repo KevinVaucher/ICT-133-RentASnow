@@ -8,7 +8,7 @@ Version : 1.0
 
 <?php
 ob_start();
-$title = "RentASnow - Inscription";
+$title = "RentASnow - Inscription"; // Titre de la page
 ?>
 
 <form action="index.php?action=tryRegister" method="POST">

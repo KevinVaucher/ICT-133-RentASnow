@@ -8,8 +8,8 @@ Version : 1.0
 
 <?php
 ob_start();
-$title = "RentASnow - Déconnecté";
-unset($_SESSION['username']);
+$title = "RentASnow - Déconnecté"; // titre de la page
+unset($_SESSION['username']); // suppression de la session pour ne pas se souvenir des informations de connexion lors de la dernière session
 ?>
 
 <h1>Vous vous êtes déconnecté</h1>

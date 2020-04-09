@@ -8,10 +8,10 @@ Version : 1.0
 
 <?php
 ob_start();
-$title = "RentASnow - Connexion";
+$title = "RentASnow - Connexion"; // titre de la page
 ?>
 
-<form action="index.php?action=tryLogin" method="POST">
+<form action="index.php?action=tryLogin" method="POST"> <!--Formulaire afin d'envoyer nos informations de connexion afin d'ensuite les vérifier dans le fichier .json-->
     <div class="form-group">
         <label for="username">Pseudo</label>
         <input type="text" class="form-control" placeholder="Entrez votre pseudo ici" name="username">

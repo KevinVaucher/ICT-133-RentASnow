@@ -66,14 +66,14 @@ Version : 1.0
                                 <li><a href="index.php?action=home">Home </a>
                                 <li>
                                 <li><a href="index.php?action=displaySnows">Snows</a></li>
-                                <?php if (isset($_SESSION['username'])) { ?>
+                                <?php if (isset($_SESSION['username'])) { ?> <!--Permet d'afficher le pseudo si jamais on est déjà connecté et aussi afficher un bouton pour se déconnecter-->
                                     <li><a href="index.php?action=disconnect">Déconnexion</a></li>
                                     <li><a href="index.php?action=personalPage">Profil : <?= $_SESSION['username'] ?></a></li>
                                 <?php } else { ?>
                                     <li><a href="index.php?action=connect">Connexion</a></li>
                                     <li><a href="index.php?action=register">Inscription</a></li>
                                 <?php }
-                                if ($_SESSION['username'] == "Admin"){?>
+                                if ($_SESSION['username'] == "Admin"){?> <!--Permet d'afficher l'accès au panel admin si on est connecté avec un compte appelé "Admin"-->
                                 <li><a href="index.php?action=adminPanel">Admin Panel</a></li>
                                 <?php }?>
                             </ul>

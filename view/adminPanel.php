@@ -8,13 +8,13 @@ Version : 1.0
 
 <?php
 ob_start();
-$title = "RentASnow - Admin Panel";
+$title = "RentASnow - Admin Panel"; // titre de la page
 ?>
 
 <h2>Page d'administration</h2>
 <br>
 <?php
-foreach ($users as $user) {
+foreach ($users as $user) { // Foreach pour afficher chaque utilisateur, son ID et un bouton pour le supprimer
     ?>
     <table border="1px" class="table">
         <th>Nom d'utilisateur</th>

@@ -8,7 +8,7 @@ Version : 1.0
 
 <?php
 ob_start();
-$title = "RentASnow - Erreur de connexion";
+$title = "RentASnow - Erreur de connexion"; // Titre de la page
 ?>
 
 <h2>Mauvais pseudo ou mot de passe, veuillez réessayer</h2>

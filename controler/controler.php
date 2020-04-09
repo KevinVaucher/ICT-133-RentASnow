@@ -31,14 +31,14 @@ function connect()
     require_once 'view/connect.php';
 }
 
+// Permet d'afficher les détails d'un snow
 function snowsDetails()
 {
     $snows = getSnows();
     require_once 'view/snowsDetails.php';
 }
 
-// Fait la vérification pour vérifier si un compte existe avec le pseudo et le mot de passe entré par l'utilisateur
-
+// Fait la vérification pour voir si un compte existe avec le pseudo et le mot de passe entrés par l'utilisateur
 function tryLogin($username, $password)
 {
     $users = getUsers();
@@ -53,6 +53,7 @@ function tryLogin($username, $password)
     require_once 'view/failedconnect.php';
 }
 
+// Permet d'afficher la page de déconnexion et de supprimer la session actuelle
 function disconnect()
 {
     unset($_SESSION['username']);
@@ -60,11 +61,13 @@ function disconnect()
     require_once 'view/disconnect.php';
 }
 
+// Permet de renvoyer sur la page d'enregistrement
 function register()
 {
     require_once 'view/register.php';
 }
 
+// Permet de vérifier les informations entrées lors de l'inscription pour voir si des informations ne sont pas redondantes dans ce qui est déjà écrit dans le fichier .json
 function tryRegister()
 {
     $users = getUsers();
@@ -82,17 +85,20 @@ function tryRegister()
     }
 }
 
+// Permet de renvoyer sur la page personnelle
 function personalPage()
 {
     require_once 'view/personalPage.php';
 }
 
+// Permet de renvoyer sur le panel administrateur
 function adminPanel()
 {
     $users = getUsers();
     require_once 'view/adminPanel.php';
 }
 
+// Permet de supprimer des utilisateurs
 function delUsers()
 {
     $idUsers = $_GET['id'];

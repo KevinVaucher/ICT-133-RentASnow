@@ -8,7 +8,7 @@ Version : 1.0
 
 <?php
 ob_start();
-$title = "RentASnow - Accueil";
+$title = "RentASnow - Accueil"; // Titre de la page
 ?>
 
 <!-- ________ SLIDER_____________-->
@@ -31,7 +31,7 @@ $title = "RentASnow - Accueil";
 <!-- ________ NEWS _____________-->
 <div class="span12">
     <h1>Les news</h1>
-    <?php foreach ($news as $onepieceofnews) { ?>
+    <?php foreach ($news as $onepieceofnews) { ?> <!--Permet d'afficher les news avec leur titre, leur date et les détails la concernant-->
         <div class="row mt-4">
             <div class="col-2"><?= date('d.M.Y', strtotime($onepieceofnews['date'])) ?></div>
             <h4 class="col-4"><?= $onepieceofnews['title'] ?></h4>

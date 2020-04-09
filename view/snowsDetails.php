@@ -14,12 +14,10 @@ Version : 1.0
 
 <?php
 ob_start();
-$title = "RentASnow - Snows";
+$title = "RentASnow - Snows"; // Titre de la page
 ?>
 
-<?php foreach ($snows
-
-               as $snow) { ?>
+<?php foreach ($snows as $snow) { ?>
 <?php if ($snow['id'] == $_GET['id']){
 ; ?>
 

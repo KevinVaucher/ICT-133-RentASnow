@@ -8,7 +8,7 @@ Version : 1.0
 
 <?php
 ob_start();
-$title = "RentASnow - Erreur d'inscription";
+$title = "RentASnow - Erreur d'inscription"; // titre de la page
 ?>
 
 <h2>Ce pseudo  est déjà pris, veuillez en mettre un autre</h2>

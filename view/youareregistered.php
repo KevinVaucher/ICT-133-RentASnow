@@ -8,7 +8,7 @@ Version : 1.0
 
 <?php
 ob_start();
-$title = "RentASnow - Inscrit";
+$title = "RentASnow - Inscrit"; // Titre de la page
 ?>
 
 <h2>Vous vous êtes inscrit, bienvenue !</h2>
